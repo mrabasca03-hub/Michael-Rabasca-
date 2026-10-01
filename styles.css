@@ -110,13 +110,12 @@ a:hover { color: var(--slate); }
 .role-head {
   width: 100%; background: none; border: none; padding: 24px 0 22px; cursor: pointer; text-align: left;
   font-family: var(--sans); color: var(--navy);
-  display: grid; grid-template-columns: 0.55fr 1.15fr 1.3fr 32px; gap: 32px; align-items: start;
+  display: grid; grid-template-columns: 0.55fr 2.45fr 32px; gap: 32px; align-items: start;
 }
 .role-head:hover { background: #fafbfc; }
 .role-dates { font-size: 13px; letter-spacing: 0.12em; color: var(--slate); padding-top: 6px; }
 .role-title { display: block; font-family: var(--serif); font-size: 26px; line-height: 1.15; }
 .role-org { display: block; font-size: 12px; letter-spacing: 0.16em; font-weight: 500; color: var(--slate); margin-top: 8px; }
-.role-summary { font-size: 14.5px; line-height: 1.7; color: var(--body); font-weight: 300; padding-top: 4px; }
 .role-sign { font-family: var(--serif); font-size: 26px; color: var(--slate); text-align: right; line-height: 1; padding-top: 4px; }
 .role-body { padding: 0 0 34px; }
 .role-body ul {
@@ -176,8 +175,40 @@ footer { background: var(--navy); color: var(--white); }
   .caps { grid-template-columns: 1fr; }
   .role-head { grid-template-columns: 1fr 28px; gap: 10px; }
   .role-dates { padding-top: 0; }
-  .role-summary { padding-top: 6px; }
   .role-sign { grid-row: 1; grid-column: 2; }
   .cred { grid-template-columns: 1fr; gap: 6px; }
   .glance { padding: 36px 28px; }
+  .head-inner { gap: 16px; padding-top: 16px; padding-bottom: 16px; }
+  .site-nav { flex-wrap: nowrap; gap: 14px; }
+  .site-nav a:not(.btn):not(.nav-icon) { display: none; }
+  .site-nav .btn { padding: 10px 14px; font-size: 10px; letter-spacing: 0.14em; }
+  .lockup { gap: 10px; }
+  .lockup-dark .mono-r { font-size: 36px; }
+  .lockup-dark .rule { height: 28px; }
+  .lockup-dark .name { font-size: 16px; letter-spacing: 0.06em; }
+  .lockup-dark .role { font-size: 7px; letter-spacing: 0.2em; }
+  .hero { padding: 44px 0 48px; gap: 36px; }
+  .hero h1 { font-size: 42px; }
+  .boxes { gap: 10px; margin-top: 28px; }
+  .box { min-height: 0; padding: 16px; }
+  .box-title { font-size: 20px; }
+  .actions .btn { flex: 1 1 auto; text-align: center; }
+  .split, .band { padding: 52px 0; }
+  .prose p { font-size: 16px; }
+  .band-head { flex-wrap: wrap; gap: 14px; }
+  .role-title { font-size: 22px; }
+  .role-org { letter-spacing: 0.1em; line-height: 1.5; }
+  .role-body li { font-size: 14.5px; padding-left: 22px; }
+  .cap h3 { font-size: 24px; }
+  .cred-what { font-size: 22px; }
+  .foot-top { padding-top: 56px; padding-bottom: 56px; }
+  .foot-top h2 { font-size: 34px; }
+  .foot-details a { overflow-wrap: anywhere; }
+}
+@media (max-width: 400px) {
+  .lockup-dark .role { display: none; }
+  .lockup-dark .name { font-size: 14px; }
+  .lockup-dark .mono-r, .lockup-dark .rule { display: none; }
+  .site-nav .btn { display: none; }
+  .site-nav .nav-icon svg { width: 22px; height: 22px; }
 }
