@@ -79,15 +79,15 @@ a:hover { color: var(--slate); }
 .hero h1 { font-family: var(--serif); font-weight: 500; font-size: 78px; line-height: 0.98; letter-spacing: 0.01em; margin: 20px 0 0; text-wrap: pretty; }
 .lede { font-size: 18px; line-height: 1.7; color: var(--body); font-weight: 300; margin: 26px 0 0; max-width: 31em; }
 .boxes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 38px; max-width: 38em; }
-.box { border: 1px solid var(--rule-strong); padding: 18px 18px 20px; }
+.box { border: 1px solid var(--rule-strong); padding: 20px 18px; display: flex; align-items: center; min-height: 96px; }
 .box-no { font-size: 10px; letter-spacing: 0.18em; font-weight: 500; color: var(--slate); }
-.box-title { font-family: var(--serif); font-size: 24px; line-height: 1.1; margin-top: 12px; }
+.box-title { font-family: var(--serif); font-size: 22px; line-height: 1.15; text-wrap: balance; }
 .box-note { font-size: 13.5px; line-height: 1.55; color: var(--slate); font-weight: 300; margin-top: 8px; }
 .actions { display: flex; gap: 14px; margin-top: 36px; flex-wrap: wrap; }
 
 .glance { background: var(--navy); padding: 52px 44px; display: flex; flex-direction: column; gap: 24px; }
-.glance-list { display: flex; flex-direction: column; gap: 20px; }
-.glance-list > div { border-top: 1px solid rgba(255,255,255,0.25); padding-top: 16px; }
+.glance-list { display: flex; flex-direction: column; gap: 28px; }
+.glance-list > div { border-top: 1px solid rgba(255,255,255,0.25); padding-top: 22px; }
 .glance-big { display: block; font-family: var(--serif); font-size: 34px; color: var(--white); line-height: 1; }
 .glance-note { display: block; font-size: 11px; letter-spacing: 0.14em; color: rgba(255,255,255,0.75); margin-top: 6px; }
 
@@ -129,7 +129,7 @@ a:hover { color: var(--slate); }
 
 /* Credentials */
 .creds { display: flex; flex-direction: column; border-bottom: 1px solid var(--rule); }
-.cred { border-top: 1px solid var(--rule); padding: 20px 0; display: grid; grid-template-columns: 0.5fr 1fr 1fr; gap: 32px; align-items: baseline; }
+.cred { border-top: 1px solid var(--rule); padding: 20px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: baseline; }
 .cred:first-child { border-top: 1px solid var(--navy); }
 .cred-when { font-size: 13px; letter-spacing: 0.12em; color: var(--slate); }
 .cred-what { font-family: var(--serif); font-size: 26px; line-height: 1.15; }
